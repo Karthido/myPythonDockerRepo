@@ -1,7 +1,3 @@
-# Docker
-# Build a Docker image
-# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
-
 trigger:
 - master
 
@@ -33,4 +29,5 @@ stages:
         containerRegistry: 'ACR'
         repository: 'practice12'
         command: 'buildAndPush'
-        Dockerfile: '**/Dockerfile'
+        Dockerfile: '$(Build.SourcesDirectory)/app/Dockerfile'''
+        tags: '$(tag)'
