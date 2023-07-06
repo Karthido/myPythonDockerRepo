@@ -1,6 +1,14 @@
+# specific branch build with batching
 trigger:
-- master
+  batch: true
+  branches:
+    include:
+    - main
 
+webhooks HTTP/HTTPS
+- push 
+- post 
+- get 
 resources:
 - repo: self
 
