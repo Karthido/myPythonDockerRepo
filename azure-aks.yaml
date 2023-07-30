@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: practice12
-        image: practice12.azurecr.io/karthido/mypythondockerrepo:49
+        image: docker pull practice12.azurecr.io/karthido/mypythondockerrepo:56
         imagePullPolicy: Always
         ports:
         - containerPort: 5000
